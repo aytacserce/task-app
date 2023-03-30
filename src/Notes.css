@@ -1,0 +1,98 @@
+.notes-body {
+  text-align: center;
+  height: 95vh;
+}
+
+.new-note-button {
+  font-size: 30px;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  color: green;
+  cursor: pointer;
+}
+
+.logout-button {
+  font-size: 30px;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  color: red;
+  cursor: pointer;
+}
+
+.note-container {
+  border: 1px solid orangered;
+  border-radius: 10px;
+  width: 60%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: left;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+.note-item {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.note-priority {
+  transform: rotate(90deg);
+}
+
+.note-title {
+  width: 60%;
+  margin-left: 20px;
+}
+
+.date-icon {
+  margin: 8px;
+  margin-left: 20px;
+}
+
+.note-date {
+  margin-right: 10px;
+  width: 130px;
+}
+
+.note-location {
+  margin-top: 8px;
+  margin-right: 120px;
+}
+
+.note-description-container {
+  display: inline-block;
+  width: 80%;
+}
+
+.note-description {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.location-button {
+  background-color: rgba(0, 128, 0, 0);
+  border: 2px solid green;
+  cursor: pointer;
+}
+
+.done-button {
+  position: absolute;
+  float: right;
+  right: 10px;
+  bottom: 30px;
+  font-size: 30px;
+  font-family: inherit;
+  padding: 10px 20px;
+  background-color: green;
+  color: antiquewhite;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.users-body {
+  text-align: center;
+  height: 95vh;
+}
+
+.report {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.report > div {
+  border: 1px solid red;
+  padding: 0 12px;
+}
+
+span {
+  font-size: 40px;
+}
+
+.priority-container > p {
+  font-size: 24px;
+}
+
+.user-container {
+  border: 1px solid orangered;
+  border-radius: 10px;
+  width: 60%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: left;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+.user-item {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.user-username {
+  width: 60%;
+  margin-left: 20px;
+}
+
+.notes-icon {
+  margin: 8px;
+  margin-left: 20px;
+}
+
+.total-notes {
+  margin-right: 10px;
+}
+
+.notes-rate {
+  margin-top: 8px;
+  margin-right: 200px;
+}
+
+.notes-description-container {
+  display: inline-block;
+  width: 80%;
+}
+
+.notes-description {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.notes-button {
+  position: absolute;
+  float: right;
+  right: 10px;
+  bottom: 10px;
+  font-size: 30px;
+  font-family: inherit;
+  padding: 10px 20px;
+  background-color: green;
+  color: antiquewhite;
+  border-radius: 10px;
+}

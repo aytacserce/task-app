@@ -1,0 +1,62 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.addnote-container {
+  position: fixed;
+  top: 10vh;
+  left: 20%;
+  width: 60%;
+  z-index: 100;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.form-header {
+  background: green;
+  padding: 0.5rem;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.addnote-form {
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.addnote-form input,
+.addnote-form select {
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.addnote-button {
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.addlocation-button {
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 5px;
+}
