@@ -2,16 +2,16 @@
   position: relative;
   width: 95%;
   height: 95vh;
-  margin-top: 200px;
+  margin-top: 20rem;
 }
 
 .close-button {
   position: absolute;
-  top: 100px;
-  right: 100px;
+  top: 10rem;
+  right: 10rem;
   z-index: 20;
-  font-size: 50px;
-  padding: 20px;
+  font-size: 5rem;
+  padding: 2rem;
   background-color: orangered;
   cursor: pointer;
   color: black;

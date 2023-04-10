@@ -164,37 +164,41 @@ const Notes = () => {
       {notesData.map((note) => (
         <div key={note[0]} className="note-container">
           <div className="note-item">
-            <div id="id" style={{ display: "none" }}>
-              {note[0]}
+            <div className="note-prio-title-cont">
+              <div id="id" style={{ display: "none" }}>
+                {note[0]}
+              </div>
+              <div className="note-priority">
+                {note[1].priority === "Important" ? (
+                  <Unicons.UilTriangle size="28" color="red" />
+                ) : (
+                  <Unicons.UilTriangle size="28" color="green" />
+                )}
+              </div>
+              <div className="note-title">{note[1].title}</div>
             </div>
-            <div className="note-priority">
-              {note[1].priority === "Important" ? (
-                <Unicons.UilTriangle size="28" color="red" />
+            <div className="note-date-pos-cont">
+              {Number(
+                new Date(note[1].dueDate).getTime() - new Date().getTime()
+              ) > 86400000 ? (
+                <Unicons.UilCalendarAlt
+                  className="date-icon"
+                  size="28"
+                  color="green"
+                />
               ) : (
-                <Unicons.UilTriangle size="28" color="green" />
+                <Unicons.UilCalendarAlt
+                  className="date-icon"
+                  size="28"
+                  color="orangered"
+                />
               )}
-            </div>
-            <div className="note-title">{note[1].title}</div>
-            {Number(
-              new Date(note[1].dueDate).getTime() - new Date().getTime()
-            ) > 86400000 ? (
-              <Unicons.UilCalendarAlt
-                className="date-icon"
-                size="28"
-                color="green"
-              />
-            ) : (
-              <Unicons.UilCalendarAlt
-                className="date-icon"
-                size="28"
-                color="orangered"
-              />
-            )}
-            <div className="note-date">{note[1].dueDate}</div>
-            <div className="note-location">
-              <button className="location-button" onClick={showMapHandler}>
-                <Unicons.UilMapMarker size="28" color="green" />
-              </button>
+              <div className="note-date">{note[1].dueDate}</div>
+              <div className="note-location">
+                <button className="location-button" onClick={showMapHandler}>
+                  <Unicons.UilMapMarker size="28" color="green" />
+                </button>
+              </div>
             </div>
           </div>
           <div className="note-description-container">

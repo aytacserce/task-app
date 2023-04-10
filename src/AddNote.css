@@ -18,14 +18,14 @@
   background: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 .form-header {
   background: green;
   padding: 0.5rem;
   color: white;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 400;
   text-align: center;
 }
@@ -36,27 +36,33 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .addnote-form input,
 .addnote-form select {
-  font-size: 20px;
+  font-size: 2rem;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .addnote-button {
   font-size: inherit;
   font-family: inherit;
   border-radius: 5px;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
 .addlocation-button {
   font-size: inherit;
   font-family: inherit;
   border-radius: 5px;
-  padding: 5px;
+  padding: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .addnote-form {
+    width: 80%;
+  }
 }

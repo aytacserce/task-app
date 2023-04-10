@@ -1,5 +1,5 @@
 .bar {
-  margin-left: 400px;
+  margin-left: 40rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -13,7 +13,7 @@
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
   100% {
     opacity: 1;
@@ -22,15 +22,15 @@
 }
 
 .bar img {
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .about {
   background-color: red;
   clip-path: polygon(23% 0%, 50% 23%, 23% 50%);
-  height: 300px;
+  height: 30rem;
   width: 30%;
-  top: 230px;
+  top: 23rem;
   left: -4%;
   margin: 0 auto;
   text-align: center;
@@ -39,9 +39,9 @@
 
 .about-text {
   position: absolute;
-  left: 36px;
-  top: 280px;
-  font-size: 26px;
+  left: 3.6rem;
+  top: 28rem;
+  font-size: 2.6rem;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -50,14 +50,14 @@
 
 .copyright {
   position: absolute;
-  left: 30px;
-  top: 430px;
-  font-size: 26px;
+  left: 3rem;
+  top: 43rem;
+  font-size: 2.6rem;
   text-decoration: none;
   color: black;
   cursor: pointer;
   z-index: 1;
-  width: 90px;
+  width: 9rem;
   text-align: center;
   font-weight: 600;
 }

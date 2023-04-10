@@ -4,11 +4,11 @@
 }
 
 p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 span {
-  font-size: 50px;
+  font-size: 5rem;
 }
 
 .signup-container img {
@@ -21,19 +21,37 @@ span {
   width: 40%;
   display: flex;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .signup-form input {
-  font-size: 30px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+  font-size: 3rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .signup-form button {
   font-size: inherit;
   font-family: inherit;
-  border-radius: 5px;
-  padding: 10px;
-  margin-top: 20px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .signup-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  p {
+    font-size: 1.2rem;
+  }
 }
